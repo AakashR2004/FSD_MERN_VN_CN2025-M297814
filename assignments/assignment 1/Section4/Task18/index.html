@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Layout with CSS Grid</title>
+    <style>
+        .dashboard {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: auto 1fr auto;
+            height: 100vh;
+            gap: 10px;
+            padding: 10px;
+        }
+        .header {
+            grid-column: 1 / -1;
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .sidebar {
+            grid-row: 2;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        .main-content {
+            grid-row: 2;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        .widget-panel {
+            grid-row: 2;
+            background-color: #e0e0e0;
+            padding: 20px;
+        }
+        .footer {
+            grid-column: 1 / -1;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <header class="header">
+            <h1>Dashboard Header</h1>
+        </header>
+        <aside class="sidebar">
+            <h2>Sidebar</h2>
+            <ul>
+                <li>Menu Item 1</li>
+                <li>Menu Item 2</li>
+                <li>Menu Item 3</li>
+            </ul>
+        </aside>
+        <main class="main-content">
+            <h2>Main Content Area</h2>
+            <p>This is the main content area of the dashboard.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </main>
+        <aside class="widget-panel">
+            <h2>Widget Panel</h2>
+            <div>Widget 1</div>
+            <div>Widget 2</div>
+        </aside>
+        <footer class="footer">
+            <p>&copy; 2023 Dashboard Footer</p>
+        </footer>
+    </div>
+</body>
+</html>

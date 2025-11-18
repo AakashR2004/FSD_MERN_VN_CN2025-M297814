@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Inline vs Block</title>
+    <style>
+        .inline-menu {
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .inline-menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .inline-menu li {
+            display: inline;
+            margin-right: 20px;
+        }
+        .inline-menu a {
+            text-decoration: none;
+            color: #333;
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            background-color: white;
+        }
+        .block-menu {
+            background-color: #e0e0e0;
+            padding: 10px;
+        }
+        .block-menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .block-menu li {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .block-menu a {
+            text-decoration: none;
+            color: #333;
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            background-color: white;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Navigation Menu Display Comparison</h1>
+    <h2>Inline Display (Horizontal)</h2>
+    <nav class="inline-menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <h2>Block Display (Vertical)</h2>
+    <nav class="block-menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

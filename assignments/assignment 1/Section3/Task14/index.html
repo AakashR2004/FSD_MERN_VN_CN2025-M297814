@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Sidebar</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+        }
+        .sidebar {
+            width: 200px;
+            height: 100vh;
+            background-color: #f0f0f0;
+            position: sticky;
+            top: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .main-content {
+            flex: 1;
+            padding: 20px;
+        }
+        .fixed-example {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: yellow;
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Sticky Sidebar</h2>
+            <p>This sidebar stays visible while scrolling.</p>
+            <ul>
+                <li>Link 1</li>
+                <li>Link 2</li>
+                <li>Link 3</li>
+            </ul>
+        </aside>
+        <main class="main-content">
+            <h1>Main Content</h1>
+            <p>This content scrolls normally.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+            <p>Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+        </main>
+    </div>
+    <div class="fixed-example">
+        Fixed element (stays at bottom-right)
+    </div>
+</body>
+</html>

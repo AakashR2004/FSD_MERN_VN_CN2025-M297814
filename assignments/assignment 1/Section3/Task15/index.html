@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning Boxes</title>
+    <style>
+        .container {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            border: 2px solid black;
+            margin: 20px;
+        }
+        .box {
+            width: 150px;
+            height: 150px;
+            color: white;
+            text-align: center;
+            line-height: 150px;
+            font-weight: bold;
+        }
+        .relative {
+            background-color: blue;
+            position: relative;
+            top: 20px;
+            left: 20px;
+        }
+        .absolute {
+            background-color: red;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        .fixed {
+            background-color: green;
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Positioning Demonstration</h1>
+    <div class="container">
+        <div class="box relative">Relative Box</div>
+        <div class="box absolute">Absolute Box</div>
+    </div>
+    <div class="box fixed">Fixed Box</div>
+    <p>Scroll down to see the fixed box stay in place.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+</body>
+</html>
